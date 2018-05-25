@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMenuActivity">
+
+    <Button
+        android:id="@+id/buttonCitas"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="72dp"
+        android:text="Habilitar Citas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConsult"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="55dp"
+        android:text="Consultar Citas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCitas" />
+
+    <Button
+        android:id="@+id/buttonAddBarb"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="50dp"
+        android:text="Agregar Barbero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConsult" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="218dp"
+        android:text="Cerrar sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddProdct"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="49dp"
+        android:text="Agregar Producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddBarb" />
+</android.support.constraint.ConstraintLayout>

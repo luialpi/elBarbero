@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+
+    <TextView
+        android:id="@+id/textViewSantaAna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginRight="137dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="56dp"
+        android:text="Santa Ana"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPinares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="30dp"
+        android:text="Pinares"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCallSantaAna" />
+
+    <TextView
+        android:id="@+id/textViewHeredia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="25dp"
+        android:text="Heredia"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCallPinares" />
+
+    <TextView
+        android:id="@+id/textViewAlajuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="149dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="149dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="25dp"
+        android:text="Alajuela"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCallHeredia" />
+
+    <Button
+        android:id="@+id/buttonCallPinares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginStart="147dp"
+        android:text="2282-9922"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPinares" />
+
+    <Button
+        android:id="@+id/buttonCallHeredia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginStart="147dp"
+        android:text="2260-9777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeredia" />
+
+    <Button
+        android:id="@+id/buttonCallAlajuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginStart="147dp"
+        android:text="2282-9922"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlajuela" />
+
+    <Button
+        android:id="@+id/buttonCallSantaAna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginStart="147dp"
+        android:text="2282-9922"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSantaAna" />
+</android.support.constraint.ConstraintLayout>

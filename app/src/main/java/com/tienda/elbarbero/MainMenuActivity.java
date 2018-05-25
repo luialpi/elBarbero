@@ -1,5 +1,6 @@
 package com.tienda.elbarbero;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 public class MainMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    ViewFlipper v_flipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +27,6 @@ public class MainMenuActivity extends AppCompatActivity
         setContentView(R.layout.activity_main_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,6 +36,29 @@ public class MainMenuActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        int images[] = {R.drawable.barbero01_320x480, R.drawable.barbero320x480, R.drawable.barbero03_320x480};
+
+        v_flipper = (ViewFlipper) findViewById(R.id.v_flipper);
+
+        //for loop
+        for(int i = 0;i < images.length; i++){
+            flipperImages(images[i]);
+        }
+    }
+
+    public void flipperImages(int images){
+
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundResource(images);
+
+        v_flipper.addView(imageView);
+        v_flipper.setFlipInterval(4000); // 4seg
+        v_flipper.setAutoStart(true);
+
+        //animacion
+        v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
+        v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }
 
     @Override
@@ -80,17 +99,17 @@ public class MainMenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_contact) {
 
-        } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(MainMenuActivity.this, ContactsActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_agenda) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_log_out) {
 
-        } else if (id == R.id.nav_send) {
+            Intent intent = new Intent(MainMenuActivity.this, LoginActivity.class);
+            startActivity(intent);
 
         }
 
